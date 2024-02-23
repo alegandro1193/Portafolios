@@ -267,7 +267,7 @@ footer{
     }
     
     #Mi_informacion p{
-        font-size : 20px;
+        font-size : 10px;
        
     }
 
@@ -280,7 +280,7 @@ footer{
       
         100%{
             opacity: 1;
-            top:  70%;
+            top:  75%;
         }
         }
     
@@ -288,17 +288,19 @@ footer{
         position: absolute;
         height: 100px;
         left: 30px;
-        top:  70%;
+        top:  75%;
         animation: desprazamento 1s;
+
        
        
     }
 
     .contenido p{
-        font-size : 15px;
+        font-size : 10px;
         height: 100px;
-        width: 300px;
+        width: 250px;
         color: azure;
+
     }
     
     footer{
@@ -307,7 +309,7 @@ footer{
         align-items: center;
         background: none ;
         height: 50px;
-        margin-top: 600px;
+        margin-top: 500px;
         color: azure;
         
       }
