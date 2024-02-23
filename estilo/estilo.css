@@ -1,0 +1,300 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    background:  rgb(39, 40, 44);
+    height: 100vh;
+    font:  Verdana, sans-serif;
+}
+
+header{
+    height: 200px;
+    background: linear-gradient(to right, rgb(31, 35, 39),90%, rgb(17, 221, 119));;
+    color: azure;
+    padding: 100px;
+    
+    
+}
+
+#menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu ul{
+    display: flex;
+    gap: 10px;
+}
+
+ button{
+    background-image: linear-gradient( 150deg, rgb(216, 120, 245),rgb(17, 221, 119), rgb(17, 221, 119) );
+    border: none;
+    border-radius: 8px;
+    color:azure;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+    font: 20px Verdana, sans-serif;
+}
+button span{
+  background-color: rgb(24, 23, 23); 
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition:  .3s;
+}
+
+button:hover span{
+    background: none;
+}
+
+button:active{
+    transform: scale(0.9);
+}
+#Precentacion{
+    display: flex;
+    padding-top: 80px;
+    gap: 20px;
+}
+.listaContactos{
+    display: flex;
+    flex-direction: column;
+}
+.icono{
+    height: 50px;
+}
+.titulo{
+    color: rgb(17, 221, 119) ;
+    font: 60px Verdana, sans-serif;
+}
+.foto{
+    height: 350px;
+}
+
+#Mi_informacion p{
+    font-size : 20px;
+   
+}
+
+.contenido{
+    position: absolute;
+    left: 100px;
+    top:  80%;
+    animation: desprazamento 1s;
+   
+   
+}
+
+.contenido p{
+    font-size : 30px;
+    width: 700px;
+    color: azure;
+}
+
+@keyframes desprazamento {
+    0%{
+    
+        opacity: 0;
+        top:  90%;
+    }
+  
+    100%{
+        opacity: 1;
+        top:  80%;
+    }
+    }
+
+
+
+#Bienvenidos{
+    display: none;
+}
+
+#Resumen{
+    display: none;
+}
+#Bienvenidos{
+    display: none;
+}
+#Portafolios{
+    display: none;
+}
+#Contactos{
+    display: none;
+}
+
+footer{
+    background-color: rgb(31, 35, 39) ;
+    height: 50px;
+    margin-top: 600px;
+  }
+
+@media (max-width: 667px) {
+    body{
+        background: linear-gradient( rgb(31, 35, 39),90%, rgb(17, 221, 119)) no-repeat;
+        height: 100%;
+        font:  Verdana, sans-serif;
+    }
+    
+    header{
+        height: 50px;
+        background: none;
+        color: azure;
+        padding: 10px;
+        
+        
+    }
+  .icono{
+    height: 30px;
+  }
+  
+  .ulContactos{
+    display: flex;
+    flex-direction: row;
+  }
+    #menu ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        
+    }
+    
+     button{
+        background-image: linear-gradient( 150deg, rgb(216, 120, 245),rgb(17, 221, 119), rgb(17, 221, 119) );
+        border: none;
+        border-radius: 8px;
+        color:azure;
+        display: flex;
+        font-size: 18px;
+        padding: 4px;
+        cursor: pointer;
+        transition: .3s;
+        height: 50px;
+        width: 100%;
+        font: 10px Verdana, sans-serif;
+    }
+    button span{
+      background-color: rgb(24, 23, 23); 
+      padding: 16px 24px;
+      border-radius: 6px;
+      transition:  .3s;
+      width: 100%;
+    
+    }
+    
+    button:hover span{
+        background: none;
+    }
+    
+    button:active{
+        transform: scale(0.9);
+    }
+    #Precentacion{
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        gap: 10px;
+
+    }
+    .titulo{
+        color: rgb(17, 221, 119) ;
+        font: 20px Verdana, sans-serif;
+    }
+    .foto{
+      
+        height: 200px;
+        width: 150px;
+        margin-left: 100px;
+        
+    }
+    
+    #Mi_informacion p{
+        font-size : 20px;
+       
+    }
+
+    @keyframes desprazamento {
+        0%{
+    
+            opacity: 0;
+            top:  90%;
+        }
+      
+        100%{
+            opacity: 1;
+            top:  70%;
+        }
+        }
+    
+    .contenido{
+        position: absolute;
+        height: 100px;
+        left: 30px;
+        top:  70%;
+        animation: desprazamento 1s;
+       
+       
+    }
+
+    .contenido p{
+        font-size : 15px;
+        height: 100px;
+        width: 300px;
+        color: azure;
+    }
+    
+    footer{
+        background-color: rgb(31, 35, 39) ;
+        height: 50px;
+        margin-top: 1000px;
+      }
+    
+  }
+
